@@ -147,6 +147,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* Custom Styles */
 .container {
   max-width: 1280px;
@@ -159,10 +163,15 @@ a {
   max-width: 100%;
 }
 
+.padding {
+  padding: 2rem 0;
+}
+
 .flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .btn {
@@ -178,7 +187,7 @@ a {
 /* Header */
 header {
   background: var(--primary);
-  padding: 2rem;
+  padding: 2rem 0;
   color: #fff;
 }
 
@@ -227,4 +236,40 @@ header a {
 }
 .btn-hero:hover {
   background: rgba(255, 255, 255, 0.7);
+}
+
+/* File Section */
+.file-section .container {
+  border-bottom: 1px solid #c1cade;
+  margin-bottom: 2rem;
+}
+.file-section a {
+  color: #c1cade;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-left: 2.2rem;
+}
+a[href$=".pdf"] {
+  background: url("../assets/pdf.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+a[href$=".doc"] {
+  background: url("../assets//word.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+a[href$=".png"] {
+  background: url("../assets/image.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+a[href$=".mp4"] {
+  background: url("../assets/video.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
