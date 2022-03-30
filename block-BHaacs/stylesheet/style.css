@@ -198,3 +198,33 @@ header a {
 .nav-list li:hover {
   border-bottom: 2px solid #fff;
 }
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 5rem 0rem 25rem 0rem;
+  background: var(--primary);
+  margin-bottom: 15rem;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+.hero-container {
+  position: relative;
+  z-index: 2;
+}
+.hero img {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  z-index: -1;
+}
+.btn-hero:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
