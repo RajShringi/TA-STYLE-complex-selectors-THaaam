@@ -160,7 +160,7 @@ a {
 }
 
 .padding {
-  padding: 2rem 0;
+  padding: 2.5rem 0;
 }
 
 .flex {
@@ -178,6 +178,14 @@ a {
   font-weight: 600;
   display: inline-block;
   cursor: pointer;
+}
+
+h2 {
+  text-align: center;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 2.7rem;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -322,4 +330,41 @@ a[href$=".mp4"] {
   top: 0;
   bottom: 0;
   right: 86%;
+}
+
+/* Weekly Score */
+table {
+  margin: 0 auto;
+  margin-top: 2rem;
+  width: 100%;
+}
+thead {
+  background: #429ea1;
+  color: #fff;
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+thead th:first-child {
+  border-top-left-radius: 5px;
+}
+thead th:last-child {
+  border-top-right-radius: 5px;
+}
+
+th,
+td {
+  padding: 1rem;
+  text-align: center;
+}
+
+tbody td {
+  border-collapse: collapse;
+  border: 1px solid #ebebeb;
+  color: #8b8d93;
+}
+
+tbody tr:nth-child(2n) {
+  background: #d5e5e5;
 }
