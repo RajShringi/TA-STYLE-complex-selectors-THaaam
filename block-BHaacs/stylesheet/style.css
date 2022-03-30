@@ -125,6 +125,12 @@ table {
   border-spacing: 0;
 }
 
+:root {
+  --primary: #59bfc2;
+  --primary-text-color: #283e7d;
+  --secondary-text-color: #7487b2;
+}
+
 /* General Styles */
 *,
 *::before,
@@ -141,17 +147,54 @@ a {
   text-decoration: none;
 }
 
-img {
-  width: 100%;
-}
-
 /* Custom Styles */
 .container {
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.full-width {
+  max-width: 100%;
 }
 
 .flex {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  background: #fff;
+  border-radius: 5px;
+  color: var(--primary-text-color);
+  font-weight: 600;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Header */
+header {
+  background: var(--primary);
+  padding: 2rem;
+  color: #fff;
+}
+
+header a {
+  color: #fff;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.nav-list li {
+  margin-left: 2rem;
+}
+
+.nav-list li:hover {
+  border-bottom: 2px solid #fff;
 }
