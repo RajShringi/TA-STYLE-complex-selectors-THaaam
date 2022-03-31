@@ -170,6 +170,14 @@ a {
   flex-wrap: wrap;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
 .btn {
   padding: 1rem 2rem;
   background: #fff;
@@ -185,6 +193,7 @@ h2 {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 2.7rem;
+  margin-bottom: 2rem;
   text-transform: uppercase;
 }
 
@@ -194,6 +203,10 @@ h3 {
   margin-bottom: 1rem;
   text-transform: uppercase;
   font-weight: 500;
+}
+
+p {
+  font-size: 1.1rem;
 }
 
 /* Header */
@@ -335,7 +348,6 @@ a[href$=".mp4"] {
 /* Weekly Score */
 table {
   margin: 0 auto;
-  margin-top: 2rem;
   width: 100%;
 }
 thead {
@@ -367,4 +379,129 @@ tbody td {
 
 tbody tr:nth-child(2n) {
   background: #d5e5e5;
+}
+
+/* Plans Section */
+.toggle {
+  width: 65px;
+  height: 30px;
+  background: #bbecec;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0.4rem;
+  margin: 0 0.7rem;
+}
+.circle {
+  width: 20px;
+  height: 20px;
+  background-color: #59bfc2;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  width: 2px;
+  height: 10px;
+  background-color: #fff;
+}
+
+.monthly,
+.yearly {
+  font-weight: 600;
+  color: #2e3854;
+}
+
+.plans {
+  margin-top: 2rem;
+}
+
+h4 {
+  font-size: 2rem;
+  color: var(--primary-text-color);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+h4 + p {
+  color: #92a1c3;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+.price {
+  font-size: 3rem;
+  color: var(--primary);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.price::before {
+  content: "$";
+  color: var(--primary);
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-right: 0.3rem;
+}
+.price::after {
+  content: "/Month";
+  margin-left: 0.3rem;
+  font-size: 1rem;
+  color: #92a1c3;
+}
+
+.basic,
+.popular {
+  flex: 0 1 40%;
+  padding: 1rem;
+  border: 5px solid #e8eefb;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.popular {
+  margin-left: 2rem;
+}
+
+.basic-hero {
+  border-bottom: 2px solid #e8eefb;
+  margin-bottom: 1rem;
+}
+
+.plan-detail div {
+  margin-bottom: 1rem;
+}
+.plan-detail p {
+  margin-left: 1rem;
+  color: #42517b;
+  font-size: 1.2rem;
+}
+
+.plan-detail .highlight {
+  color: #677cab;
+  font-size: 1.2rem;
+}
+
+.btn-plan {
+  border: 2px solid #c7d4f1;
+  width: 100%;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.btn-plan:hover {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.btn-popular {
+  border: 0;
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.btn-popular:hover {
+  background-color: #fff;
+  color: var(--primary);
+  outline: 2px solid #c7d4f1;
 }
