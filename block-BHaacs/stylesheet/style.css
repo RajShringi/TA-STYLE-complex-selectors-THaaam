@@ -505,3 +505,19 @@ h4 + p {
   color: var(--primary);
   outline: 2px solid #c7d4f1;
 }
+
+/* Trial section */
+.trial-container {
+  text-align: center;
+  background-color: var(--primary);
+  padding: 5rem 0;
+  border-radius: 60px;
+}
+.trial-container h2 {
+  color: #fff;
+}
+.btn-trial {
+  padding: 0.8rem 5rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
