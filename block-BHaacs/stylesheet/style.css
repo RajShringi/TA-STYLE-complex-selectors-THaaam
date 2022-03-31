@@ -233,6 +233,14 @@ header a {
   border-bottom: 2px solid #fff;
 }
 
+#toggle-menu {
+  display: none;
+}
+
+.bars {
+  display: none;
+}
+
 /* Hero */
 .hero {
   text-align: center;
@@ -510,7 +518,7 @@ h4 + p {
 .trial-container {
   text-align: center;
   background-color: var(--primary);
-  padding: 5rem 0;
+  padding: 5rem 2rem;
   border-radius: 60px;
 }
 .trial-container h2 {
@@ -520,6 +528,9 @@ h4 + p {
   padding: 0.8rem 5rem;
   font-size: 1.8rem;
   font-weight: 400;
+}
+.btn-trial:hover {
+  background: rgba(255, 255, 255, 0.7);
 }
 
 /* footer */
@@ -539,7 +550,11 @@ footer {
   color: #fff;
   margin-right: 1rem;
 }
-
+.icon:hover {
+  background: #fff;
+  color: var(--primary);
+  outline: 2px solid var(--primary);
+}
 footer ul {
   flex: 0 1 23%;
 }
@@ -549,4 +564,115 @@ footer p {
 }
 .align-start {
   align-items: flex-start;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+  .container {
+    max-width: 740px;
+    width: 100%;
+  }
+  header {
+    background-color: rgba(89, 191, 194, 0.9);
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    z-index: 99;
+  }
+  .nav {
+    display: none;
+  }
+  .nav-list {
+    flex-direction: column;
+  }
+  .bars {
+    display: inline-block;
+    font-size: 1.5rem;
+    position: fixed;
+    right: 2rem;
+    top: 1rem;
+    z-index: 100;
+  }
+  .logo {
+    font-size: 1.5rem;
+    position: fixed;
+    left: 2rem;
+    top: 1rem;
+    z-index: 100;
+  }
+  #toggle-menu:checked + .nav {
+    display: block;
+  }
+  .nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(89, 191, 194, 0.9);
+    padding-top: 6rem;
+    z-index: 99;
+  }
+  .nav-list li {
+    margin: 2rem 0;
+    font-size: 2rem;
+  }
+  .file-section li {
+    flex: 0 1 45%;
+    margin: 1rem 0;
+    text-align: center;
+  }
+  .monitor-article {
+    flex: 0 1 100%;
+    order: 2;
+  }
+  .monitor-img-container {
+    flex: 0 1 100%;
+    order: 1;
+    margin-bottom: 2rem;
+  }
+  .basic,
+  .popular {
+    flex: 0 1 100%;
+  }
+  .basic {
+    margin-bottom: 2rem;
+  }
+  .popular {
+    margin-left: 0;
+  }
+
+  footer ul {
+    flex: 0 1 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 548px) {
+  html {
+    font-size: 10px;
+  }
+  .container {
+    max-width: 500px;
+    width: 100%;
+  }
 }

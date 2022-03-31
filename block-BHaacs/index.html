@@ -18,7 +18,11 @@
     <header>
       <div class="container flex">
         <a href="#" class="logo">TrackL</a>
-        <nav>
+        <label class="bars" for="toggle-menu"
+          ><i class="fa-solid fa-bars"></i
+        ></label>
+        <input type="checkbox" id="toggle-menu" />
+        <nav class="nav">
           <ul class="nav-list flex">
             <li><a href="#">Features</a></li>
             <li><a href="#">Pricing</a></li>
@@ -233,9 +237,11 @@
       </section>
       <!-- trial sections -->
       <section class="trial padding">
-        <div class="container trial-container">
-          <h2>Start Your 30 Days Trial Now!</h2>
-          <a href="#" class="btn btn-trial">Get Started</a>
+        <div class="container">
+          <div class="trial-container">
+            <h2>Start Your 30 Days Trial Now!</h2>
+            <a href="#" class="btn btn-trial">Get Started</a>
+          </div>
         </div>
       </section>
     </main>
